@@ -22,7 +22,7 @@ This version is a major update to the `piecewiseSEM` package that usesa complete
 
 It also incorporates new functionality in the form of coefficient standardization and updated methods for R^2 for mixed models.
 
-Currently supported model classes: `lm, glm, gls, lme, glmmPQL, lmerMod, merModLmerTest, glmerMod`
+Currently supported model classes: `lm, glm, gls, lme, sarlm, Sarlm, glmmPQL, lmerMod, merModLmerTest, glmerMod`
 
 ```
 # Install development branch from github

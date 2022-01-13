@@ -7,7 +7,7 @@
 #' allows for fitting of models to different distributions through GLM and/or
 #' hierarchical/nested random structures through (G)LMER. Supported model
 #' classes include: \code{lm, glm, gls, lme, glmmPQL, lmerMod, merModLmerTest, 
-#' glmerMod}.
+#' glmerMod, sarlm, Sarlm}.
 #'
 #' \tabular{ll}{ Package: \tab piecewiseSEM\cr Type: \tab Package\cr Version:
 #' \tab 2.2.0\cr Date: \tab 2021-01-11\cr Depends: \tab R (>= 4.0.3), car,
