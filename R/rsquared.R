@@ -111,6 +111,8 @@ rsquared <- function(modelList, method = NULL) {
     # if(any(class(i) %in% c("phylolm", "phyloglm"))) r <- rsquared.phylolm(i)
 
     if(all(class(i) %in% c("lme"))) r <- rsquared.lme(i) else
+    
+    if(all(class(i) %in% c("Sarlm"))) r <- rsquared.Sarlm(i) else  
 
     if(all(class(i) %in% c("lmerMod", "merModLmerTest", "lmerModLmerTest"))) r <- rsquared.merMod(i) else
 
@@ -674,3 +676,10 @@ rsquared.gam <- function(model) {
   
 }
   
+rsquared.Sarlm <- function(model) {
+  
+  r <- summary(model,Nagelkerke=T)$NK
+  
+  list(family = "none", link = "none", method = "Nagelkerke", R.squared = r)
+  
+}
