@@ -675,7 +675,11 @@ rsquared.gam <- function(model) {
   list(family = family., link = link, method = "none", R.squared = r)
   
 }
-  
+
+# R^2 for Sarlm objects
+# 
+# @keywords internal
+#  
 rsquared.Sarlm <- function(model) {
   
   r <- summary(model,Nagelkerke=T)$NK
